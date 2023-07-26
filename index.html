@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst</title>
+    <link rel="icon" href="images/logo.png" type="">
+
+    <!--Tailwind & DaisyUI CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+
+<!--Tailwind Custom Styles-->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            orange: '#F85559',
+          }
+        }
+      }
+    }
+  </script>
+<!--Custom Styles-->
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+
+        .custom-overlay::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, rgba(18, 18, 18, 1), rgba(18, 18, 18, 0));
+  }
+    </style>
+
+</head>
+
+<body class="font-lato">
+    <header class="md:container md:mx-auto">
+        <nav>
+            <div class="navbar bg-base-100 bg-orange">
+                <div class="navbar-start flex items-center"> 
+                  <div class="dropdown block sm:hidden">
+                    <label tabindex="0" class="btn btn-ghost btn-circle daisyui-btn-sm">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                      </svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content text-lg mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a class="daisyui-text-primary">Home</a></li>
+                      <li><a class="daisyui-text-primary">About Us</a></li>
+                      <li><a class="daisyui-text-primary">Shop</a></li>
+                      <li><a class="daisyui-text-primary">All Fruits</a></li>
+                    </ul>
+                  </div>
+            
+                  <div class="navbar-center hidden lg:flex text-white">
+                    <ul class="menu menu-horizontal text-lg px-1">
+                      <li><a>Home</a></li>
+                      <li><a>About Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navbar-center flex-1">
+                    <img src="images/logo.png" alt="">
+                  <a class="text-4xl text-white">Fruit Burst</a>
+                </div>
+                <div class="form-control hidden sm:block">
+                    <input type="text" placeholder="Search" class="input input-bordered rounded-full w-24 md:w-auto" />
+                  </div>
+                </div>
+              </div>
+        </nav>
+
+<!--Carousel-->
+<div class="carousel w-full my-10">
+  <div id="slide1" class="carousel-item relative w-full">
+    <img src="images/banner1.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide4" class="btn btn-circle">❮</a> 
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide2" class="carousel-item relative w-full">
+    <img src="images/banner2.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide1" class="btn btn-circle">❮</a> 
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide3" class="carousel-item relative w-full">
+    <img src="images/banner3.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide2" class="btn btn-circle">❮</a> 
+      <a href="#slide4" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide4" class="carousel-item relative w-full">
+    <img src="images/banner4.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide3" class="btn btn-circle">❮</a> 
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  div class="absolute top-0 left-0 w-full h-full custom-overlay"></div>
+
+  <!-- Centered Content -->
+  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+    <h1 class="text-7xl font-bold">Exotic tastes at your doorstep</h1>
+    <p class="text-xl my-2">We supply highly quality organic products</p>
+    <button class="btn btn-primary">Button</button>
+  </div>
+</div>
+    </header>
+
+    <main class="md:container md:mx-auto">
+
+    </main>
+
+    <footer>
+
+    </footer> 
+</body>
+</html>
