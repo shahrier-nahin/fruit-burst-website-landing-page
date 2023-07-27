@@ -82,15 +82,26 @@
                     <img src="images/logo.png" alt="">
                   <a class="text-4xl text-white">Fruit Burst</a>
                 </div>
-                <div class="form-control hidden sm:block">
-                    <input type="text" placeholder="Search" class="input input-bordered rounded-full w-24 md:w-auto" />
-                  </div>
+                <div class="form-control hidden sm:block relative">
+                  <input type="text" placeholder="Search" class="input input-bordered rounded-full w-24 md:w-auto pl-10" />
+                  <span class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 18h8m3.561-3.561c1.953-1.952 1.953-5.118 0-7.07-1.952-1.953-5.118-1.953-7.071 0-1.952 1.952-1.952 5.118 0 7.07 1.953 1.952 5.118 1.952 7.071 0z"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+                
                 </div>
               </div>
         </nav>
 
 <!--Carousel-->
-<div class="carousel w-full my-10 brightness-50">
+<div class="carousel w-full my-10 brightness-50 relative">
   <div id="slide1" class="carousel-item relative w-full">
     <img src="images/banner1.png" class="w-full" />
     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -114,12 +125,48 @@
   </div> 
   <div id="slide4" class="carousel-item relative w-full">
     <img src="images/banner4.png" class="w-full" />
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 scroll-p-0">
       <a href="#slide3" class="btn btn-circle">❮</a> 
       <a href="#slide1" class="btn btn-circle">❯</a>
     </div>
   </div>
   div class="absolute top-0 left-0 w-full h-full custom-overlay"></div>
+
+  <!--Fruite Section-->
+  <div class="bg-white absolute bottom-0 left-1/2 inset-x-1/2 transform -translate-x-1/2 h-20 w-9/12 hidden md:block">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+      <!-- First Image -->
+      <div class="text-center">
+        <img src="images/fruit1.png" alt="" class="mx-auto w-32 h-32" />
+        <p class="mt-3 text-sm font-semibold">Graph</p>
+      </div>
+      
+      <!-- Second Image -->
+      <div class="text-center">
+        <img src="images/fruit2.png" alt="" class="mx-auto w-32 h-32" />
+        <p class="mt-3 text-sm font-semibold">Orange</p>
+      </div>
+      
+      <!-- Third Image -->
+      <div class="text-center">
+        <img src="images/fruit3.png" alt="" class="mx-auto w-32 h-32" />
+        <p class="mt-3 text-sm font-semibold">Mango</p>
+      </div>
+      
+      <!-- Fourth Image -->
+      <div class="text-center">
+        <img src="images/fruit4.png" alt="" class="mx-auto w-32 h-32" />
+        <p class="mt-3 text-sm font-semibold">Strawberry</p>
+      </div>
+      
+      <!-- Fifth Image -->
+      <div class="text-center">
+        <img src="images/fruit5.png" alt="" class="mx-auto w-32 h-32" />
+        <p class="mt-3 text-sm font-semibold">Pomegranate</p>
+      </div>
+    </div>
+  </div>
+  
 
   <!-- Centered Content -->
   <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
@@ -131,7 +178,7 @@
 
     <main class="md:container md:mx-auto">
    <!--Deals-->
-   <div class="flex flex-col lg:flex-row items-center lg:justify-between">
+   <div class="flex flex-col lg:flex-row items-center lg:justify-between mt-20">
     <div class="w-full lg:w-1/4 lg:mr-10">
             <h1 class="text-4xl text-black">Deal of the day</h1>
             <p class="text-sm ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -335,31 +382,31 @@
 
     <!--Footer Section-->
     <footer class="footer footer-center p-10 bg-[#121212] text-white rounded mt-20">
-      <div class="flex">
-        <img src="images/logo.png" alt="Logo" class="w-12 h-12">
-        <a class="text-4xl text-white ml-2 font-bold">Fruit Burst</a>
-      </div>
-    
-      <div class="grid grid-flow-col gap-4">
-        <a class="link link-hover text-white">Home</a> 
-        <a class="link link-hover text-white">About us</a> 
-        <a class="link link-hover text-white">Shop</a> 
-        <a class="link link-hover text-white">All Fruits</a> 
-        <a class="link link-hover text-white">Support</a>
-        <a class="link link-hover text-white">My Account</a> 
-      </div> 
-    
-      <div class="grid grid-flow-col gap-4">
-        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current text-white"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
-        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current text-white"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a> 
-        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current text-white"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
-      </div> 
-    
-      <div>
-        <p class="text-center">Copyright © 2023 - All right reserved by Fruit Burst</p>
-      </div>
-    </footer>
-    
+  <div class="flex">
+    <img src="images/logo.png" alt="Logo" class="w-12 h-12">
+    <a class="text-4xl text-white ml-2 font-bold">Fruit Burst</a>
+  </div>
+
+  <div class="grid grid-flow-col gap-4">
+    <a class="link link-hover text-white">Home</a> 
+    <a class="link link-hover text-white">About us</a> 
+    <a class="link link-hover text-white">Shop</a> 
+    <a class="link link-hover text-white">All Fruits</a> 
+    <a class="link link-hover text-white">Support</a>
+    <a class="link link-hover text-white">My Account</a> 
+  </div> 
+
+  <div class="grid grid-flow-col gap-4">
+    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current text-white"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
+    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current text-white"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a> 
+    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current text-white"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+  </div> 
+
+  <div>
+    <p class="text-center">Copyright © 2023 - All right reserved by Fruit Burst</p>
+  </div>
+</footer>
+
     
 </body>
 </html>
