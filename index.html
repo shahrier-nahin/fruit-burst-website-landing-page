@@ -6,6 +6,9 @@
     <title>Fruit Burst</title>
     <link rel="icon" href="images/logo.png" type="">
 
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Tailwind & DaisyUI CDN-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -87,7 +90,7 @@
         </nav>
 
 <!--Carousel-->
-<div class="carousel w-full my-10">
+<div class="carousel w-full my-10 brightness-50">
   <div id="slide1" class="carousel-item relative w-full">
     <img src="images/banner1.png" class="w-full" />
     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -255,9 +258,83 @@
       </div>
    </div>
 
+
+   <!--Team Section-->
+   <div>
+    <div class="hero min-h-screen" style="background-image: url(images/team.png);">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+          <p class="mb-5 text-xs">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <!--Team Members-->
+            <div class="flex justify-center gap-5">
+              <div class="card w-full border-inherit mx-2">
+                <figure class="px-0 pt-0">
+                  <img src="images/member1.png" alt="Shoes" class="rounded-xl avatar w-28 h-28 object-cover" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Anthony Baker</h2>
+                  <p class="text-xs">Fruits Expart</p>
+                  <div class="flex-1">
+                    <i class="fa-brands fa-facebook" style="color: #f85559;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #f85559;"></i>
+                    <i class="fa-brands fa-linkedin" style="color: #f85559;"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card w-full border-inherit mx-2">
+                <figure class="px-0 pt-0">
+                  <img src="images/member2.png" alt="Shoes" class="rounded-xl avatar w-28 h-28 object-cover" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Emma Johnson</h2>
+                  <p class="text-xs">Fruits Expart</p>
+                  <div class="flex-1">
+                    <i class="fa-brands fa-facebook" style="color: #f85559;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #f85559;"></i>
+                    <i class="fa-brands fa-linkedin" style="color: #f85559;"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card w-full border-inherit mx-2">
+                <figure class="px-0 pt-0">
+                  <img src="images/member3.png" alt="Shoes" class="rounded-xl avatar w-28 h-28 object-cover" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Richard Thompson</h2>
+                  <p class="text-xs">Fruits Expart</p>
+                  <div class="flex-1">
+                    <i class="fa-brands fa-facebook" style="color: #f85559;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #f85559;"></i>
+                    <i class="fa-brands fa-linkedin" style="color: #f85559;"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card w-full border-inherit mx-2">
+                <figure class="px-0 pt-0">
+                  <img src="images/member4.png" alt="Shoes" class="rounded-xl avatar w-28 h-28 object-cover" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Claire Mitchell</h2>
+                  <p class="text-xs">Fruits Expart</p>
+                  <div class="flex-1">
+                    <i class="fa-brands fa-facebook" style="color: #f85559;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #f85559;"></i>
+                    <i class="fa-brands fa-linkedin" style="color: #f85559;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+   </div>
     </main>
 
-    <footer class="footer footer-center p-10 bg-[#121212] text-white rounded">
+    <!--Footer Section-->
+    <footer class="footer footer-center p-10 bg-[#121212] text-white rounded mt-20">
         <div class="flex">
             <img src="images/logo.png" alt="">
           <a class="text-4xl text-white text-4xl">Fruit Burst</a>
@@ -277,7 +354,7 @@
             <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current text-white"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
         </div> 
         <div>
-            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+            <p>Copyright © 2023 - All right reserved by Fruit Burst</p>
         </div>
     </footer>
     
